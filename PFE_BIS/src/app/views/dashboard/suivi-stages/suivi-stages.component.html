@@ -1,0 +1,48 @@
+<c-row>
+  <c-col xs>
+    <c-card class="mb-4">
+      <c-card-header>Fiche De Scolarité</c-card-header>
+      <c-card-body>
+
+        <mat-accordion class="example-headers-align" multi>
+          <mat-expansion-panel disabled cTableColor="light">
+            <mat-expansion-panel-header>
+              <mat-panel-title  class="text-center">
+                <svg cIcon name="cilPeople"></svg>
+              </mat-panel-title>
+              <mat-panel-description>
+                BEN YAALA Siwar
+              </mat-panel-description>
+              <mat-panel-description>
+                11808943
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+
+
+          <mat-expansion-panel disabled cTableColor="light">
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                <button mat-stroked-button color="primary" routerLink="/dashboard/decouverte">
+                  Stage ouvrier
+                </button>
+              </mat-panel-description>
+              <mat-panel-description>
+                <button mat-stroked-button color="warn" routerLink="/dashboard/technicien">
+                  Stage technicien
+                </button>
+              </mat-panel-description>
+              <mat-panel-description>
+                <button mat-stroked-button color="primary" routerLink="/dashboard/finetudes">
+                  Stage de fin d'étude
+                </button>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
+<router-outlet></router-outlet>
+
